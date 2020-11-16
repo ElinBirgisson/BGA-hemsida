@@ -1,0 +1,101 @@
+@media (max-width:768px) {
+
+    .site-main {
+        width: 100%;
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    .hero {
+        max-height: 50vh;
+    }
+
+    .hero h1 {
+        width: 100%;
+    }
+
+    .hero h3 {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .menu { 
+       flex-direction: column;
+       place-items: center;
+    }
+
+
+    .menu-item {
+        margin: 10px;
+ 
+    }
+
+    .show {
+        display: block;
+    }
+
+    .toggle-menu {
+        display: block;
+        color: inherit;
+        font-size: 2rem;
+    
+        position: absolute;
+        right: 20px;
+    }
+    .border-bottom {
+        border-bottom: 1px dotted #777;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .grid-foreningar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        grid-template-areas:
+        " info "
+        " log1 "
+        " text1 "
+        " log2 "
+        " text2 "
+        " log3 "
+        " text4 "
+        " log4 ";
+    }
+
+    .content-pic {
+        clip-path: circle(100px at 50% 50%);
+    }
+    .grid-kontakt {
+        display: grid;
+        grid-gap: 1rem;
+            
+        align-items: space-evenly;
+        
+        grid-template-areas:
+        "con2"
+        "con1"
+        "con1"
+        "con1"
+        ;
+    }
+    
+    .kontakta-oss {
+        grid-area: con1;
+    }
+    #form-kontakt {
+        width: 100%;
+    }
+
+    .col {
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .w50 {
+        max-width: 100%;
+    }
+
+}

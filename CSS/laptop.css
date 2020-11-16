@@ -1,0 +1,164 @@
+@media (max-width:960px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        max-height: 50vh;
+    }
+
+    .hero h1 {
+    }
+
+    .hero h3 {
+        padding-bottom: 0;
+    }
+
+    .button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .site-main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .toggle-menu {
+        display: block;
+        color: inherit;
+        font-size: 2rem;
+    
+        position: absolute;
+        right: 20px;
+    }
+
+    .site-navigation {
+        display: none;
+    }
+
+    .menu { 
+       flex-direction: column;
+       place-items: center;
+    }
+
+    .menu-item {
+        margin: 10px;
+ 
+    }
+
+    .show {
+        display: block;
+    }
+
+    /* Innehåll */
+    .border-bottom {
+        border-bottom: 1px dotted #777;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .grid-schema {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas:
+        "text"
+        "schema"
+        "hall";
+    }
+
+    .grid-foreningar {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-areas:
+        " info info "
+        " log1 log2 "
+        " text1 text2 "
+        " log3 log4 "
+        " text3 text4 ";
+    }
+    .foreningslogga {
+        max-width: 50%;
+        text-align: center;
+    }
+    .grid-location {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas:
+        "T"
+        "M"
+        "M"
+        "HP";
+    }
+
+    .grid-content {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        grid-template-areas:
+        "con2"
+        "con1";
+    }
+
+    .grid-sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-areas:
+        "T"
+        "S1"
+        "S2" 
+        "S3" 
+        "S4";
+    }
+
+    .sponsorbild {
+        max-width: 80%;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .grid-kontakt {
+        display: grid;
+        grid-gap: 1rem;
+            
+        align-items: space-evenly;
+        
+        grid-template-areas:
+        "con2"
+        "con1"
+        "con1"
+        "con1"
+        ;
+    }    
+    
+    .kontakta-oss {
+        grid-area: con1;
+    }
+
+    .post-kontakt {
+        grid-area: con2;
+    }
+
+    /* Cosmetic */
+    .grow {
+        transition: none;
+        transition-property: none;
+    }
+
+    .grow:hover {
+        transform: none;
+    }
+
+    
+
+
+    
+}

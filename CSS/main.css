@@ -1,0 +1,612 @@
+/*foundation*/
+:root {
+    --primary-color: #f5f5dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*base*/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'lato', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 20px 0;
+    font-family: 'merriweather', sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Hjälpklasser*/
+.site-main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.site-header {
+    position: sticky;
+    min-height: 60px;
+    Background-color: Var(--primary-color);
+    padding: 5px;
+    top: 0;
+    z-index: 10;
+}
+.site-footer {
+    min-height: 150px;
+    background-color: #f5f5dc;
+    padding: 20px;
+}
+
+.site-navigation {}
+
+.toggle-menu {
+    display: none;
+}
+
+.menu {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px auto;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+
+}
+.menu-item a:hover {
+    background-color: rgba(161, 108, 84,0.2);
+}
+
+.hero {
+    background-image: url('../images/hallblurrad2.JPG');
+    background-size: cover;
+    background-position: center center;
+    min-height: 30vh;
+    position: relative;
+    padding: 20px 0;
+}
+
+.hero h1 {
+    position: relative;
+    text-transform: uppercase;
+    Text-align: center;
+    color: white;
+}
+
+.hero h3 {
+    position: relative;
+    Text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.button {
+    width: 240px;
+    height: 60px;
+    margin: auto;
+    display: block;
+    background-color: transparent;
+    background-color: rgba(78, 78, 78, 0.568);
+    border-style: none;
+    font-family: 'lato', sans-serif;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.button:hover {
+    border-style: solid;
+    background-color: rgba(161, 108, 84,0.2);
+}
+
+.button-schema {
+    width: 50%;
+    height: 10%;
+    margin: 30px auto;
+    display: block;
+    background-color: transparent;
+    background-color: rgba(78, 78, 78, 0.568);
+    border-style: solid;
+    border-color:  rgba(78, 78, 78, 0.568);
+    font-family: 'lato', sans-serif;
+    cursor: pointer;
+}
+
+.button-schema a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.button-schema:hover {
+    border-style: solid;
+    background-color: rgba(78, 78, 78, 0.9);
+}
+
+.fa-heart {
+    font-size: 50px;
+    padding: 10px;
+    float: left;
+}
+
+/*Project*/
+
+.footer-row::after { 
+    content: '';
+    clear: both;
+    display: block;
+    }
+
+.main-content {
+    padding: 30px 0;
+}
+
+/* .post-schema
+.post-foreningar
+.post-location
+.post-sponsor {} */
+
+.post-title {
+    text-align: center;
+}
+
+.post-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.border-bottom {
+    border-bottom: 1px dotted #777;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-schema {
+    min-height: 20vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+
+    grid-template-areas:
+    "text text text text"
+    "hall hall schema schema"
+    "hall hall schema schema";
+}
+
+.post-schema {
+    grid-area: text;
+
+}
+
+.hallskiss {
+    grid-area: hall;
+}
+
+.schema {
+    grid-area: schema;
+}
+
+
+.grid-foreningar {
+    min-height: 40vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+
+    align-items: center;
+
+    grid-template-areas:
+    "info info info info"
+    "log1 log2 log3 log4"
+    "text1 text2 text3 text4";
+}
+
+.post-foreningar {
+    grid-area: info;
+}
+
+.loggor1 {
+    grid-area: log1;
+}
+
+.loggor2 {
+
+    grid-area: log2;
+}
+
+.loggor3 {
+
+    grid-area: log3;
+}
+
+.loggor4 {
+
+    grid-area: log4;
+}
+
+.info-foreningar1 {
+    grid-area: text1;
+}
+.info-foreningar2 {
+    grid-area: text2;
+}
+.info-foreningar3 {
+    grid-area: text3;
+}
+.info-foreningar4 {
+    grid-area: text4;
+}
+
+.foreningslogga {
+    max-width: 80%;
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.fa-fw {
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+
+.grid-location {
+    min-height: 20vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+
+    align-content: space-evenly;
+
+    grid-template-areas:
+    "T T HP HP"
+    "M M HP HP"
+    "M M HP HP"
+}
+
+.post-location {
+    grid-area: T;
+}
+
+.google-map {
+    grid-area: M;
+}
+
+.grid-img {
+    grid-area: HP;
+}
+
+.grid-sponsor {
+    min-height: 20vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+
+    grid-template-areas:
+    "T T T T"
+    "S1 S2 S3 S4";
+}
+
+.sponsorbild {}
+
+.post-sponsor {
+    grid-area: T;
+}
+
+.sponsorbild:nth-of-type(1) {
+    grid-area: S1;
+}
+.sponsorbild:nth-of-type(2) {
+    grid-area: S2;
+}
+.sponsorbild:nth-of-type(3) {
+    grid-area: S3;
+}
+.sponsorbild:nth-of-type(4) {
+    grid-area: S4;
+}
+
+.grid-priser {
+    min-height: 20vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+
+    justify-items: center;
+
+    grid-template-areas:
+    "icon icon"
+    "link link"
+    "t1 t1"
+    "t2 t2"
+    "p1 p1";
+
+}
+
+.fa-comments-dollar {
+    grid-area: icon;
+    font-size: 4rem;
+    display: flex;
+}
+
+.link-pris {
+    grid-area: link;
+    display: flex;
+}
+.link-pris a {
+    color: darkblue;
+}
+
+.post-termin {
+    grid-area: t1;
+    display: flex;
+    justify-self: center;
+}
+
+.post-villkor {
+    grid-area: t2;
+    display: flex;
+}
+
+.img-pris {
+    grid-area: p1;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-content {
+    min-height: 20vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    
+    align-items: center;
+
+    grid-template-areas:
+    "con1 con1 con2 con2"
+    "con1 con1 con2 con2";
+}
+
+.content-left {
+    grid-area: con1;
+}
+
+.post-content {
+    border-style: solid;
+    border-color: #f5f5dc;
+}
+
+.content-right {
+    grid-area: con2;
+}
+
+.row {
+}
+
+.col {
+    float: left;
+    width: 100%;
+}
+
+.w50 {
+    max-width: 50%;
+}
+
+.content-pic {
+    clip-path: circle(130px at 50% 50%);
+}
+
+.lista-hallar {
+    list-style: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.lista-hallar a {
+    color: darkblue;
+}
+
+.fa-comments {
+    font-size: 50px;
+    text-align: center;
+}
+
+.grid-kontakt {
+    min-height: 80vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+        
+/*     align-items: space-evenly; */
+    
+    grid-template-areas:
+    "con1 con1 con2 con2"
+    "con1 con1 con2 con2"
+    "con1 con1 con2 con2";
+}
+
+.kontakta-oss {
+    grid-area: con1;
+}
+
+.post-kontakt {
+    text-align: center;
+    padding: 20px 0;
+    grid-area: con2;
+}
+    
+
+/* Forumulärer*/
+
+#form-bokning {
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.rubrik-formular {
+    padding: 30px 0px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#form-bokning input[type=text],
+#form-bokning input[type=tel],
+#form-bokning input[type=email],
+#form-bokning input[type=time], 
+#form-bokning input[type=number],
+#form-bokning input[type=checkbox],
+#form-bokning input[type=date] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 10px 0;
+border: 1px solid grey;
+border-radius: 4px;
+font-size: 18px;
+}
+
+
+#form-bokning input[type=submit] {
+    margin-top: 20px;
+}
+
+/* Formulär Kontakt */
+
+#form-kontakt {
+    width: 80%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rubrik-kontakt {
+    padding: 30px 0px;
+    font-size: 1.5rem
+}
+
+#form-kontakt input[type=text],
+#form-kontakt input[type=tel],
+#form-kontakt input[type=email],
+textarea,
+select {
+width: 100%;
+padding: 10px;
+margin: 5px 0 10px 0;
+border: 1px solid grey;
+border-radius: 4px;
+font-size: 14px;
+font-family: 'lato', sans-serif;
+}
+
+#form-kontakt input[type=submit] {
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+.footer-row {
+    margin: auto;
+}
+
+.footer-column {
+    width: 50%;
+    padding: 20px;
+    float: left;
+} 
+
+.footer-text {
+    padding: 0 10%;
+}
+
+.ic-footer {
+    font-size: 3rem;
+    color: black;
+    margin: 5px 15px;
+}
+
+.svgf-logga {
+    width: 120px;
+    height: 40px;
+    margin: 5px 15px;
+}
+
+/* COSMETIC */
+.grow {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border-color: whitesmoke;
+    border-style: solid;
+  }
+  
+  .grow:hover {
+    transform: scale(2.0);
+  }
+
